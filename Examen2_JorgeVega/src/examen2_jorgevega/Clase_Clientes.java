@@ -9,17 +9,17 @@ Jorge Vega
 
 public class Clase_Clientes implements Serializable{
     private String NOMBRE;
-    private ArrayList <Orden> CAPTURA_DE_ORDENES = new ArrayList();
+    private ArrayList <Orden> ORDENES = new ArrayList();
     
     
-    private static final long SerialVersionUID=475L;
+    private static final long SerialVersionUID=555L;
 
     public Clase_Clientes() {
     }
     
-    public Clase_Clientes(String NOMBRE, ArrayList <Orden> CAPTURA_DE_ORDENES) {
+    public Clase_Clientes(String NOMBRE, ArrayList <Orden> ORDENES) {
         this.NOMBRE = NOMBRE;
-        this.CAPTURA_DE_ORDENES = CAPTURA_DE_ORDENES;
+        this.ORDENES = ORDENES;
     }
 
     public String getNOMBRE() {
@@ -30,17 +30,17 @@ public class Clase_Clientes implements Serializable{
         this.NOMBRE = NOMBRE;
     }
 
-    public ArrayList<Orden> getCAPTURA_DE_ORDENES() {
-        return CAPTURA_DE_ORDENES;
+    public ArrayList<Orden> getORDENES() {
+        return ORDENES;
     }
 
-    public void setCAPTURA_DE_ORDENES(ArrayList<Orden> CAPTURA_DE_ORDENES) {
-        this.CAPTURA_DE_ORDENES = CAPTURA_DE_ORDENES;
+    public void setORDENES(ArrayList<Orden> ORDENES) {
+        this.ORDENES = ORDENES;
     }
 
     @Override
     public String toString() {
-        return "CLIENTES{" + "NOMBRE: " + NOMBRE + ", LISTA_ORDENES: " + CAPTURA_DE_ORDENES + '}';
+        return "CLIENTES{" + "NOMBRE: " + NOMBRE + ", LISTA_ORDENES: " + ORDENES + '}';
     }
     
     

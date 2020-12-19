@@ -11,7 +11,7 @@ public class Orden implements Serializable{
     private String COMPLE;
     public int N_ORDEN;
     
-    private static final long SerialVersionUID=475L;
+    private static final long SerialVersionUID=556L;
 
 
     public Orden(int TIME, String COMPLE, int N_ORDEN) {
@@ -20,6 +20,7 @@ public class Orden implements Serializable{
         this.N_ORDEN = N_ORDEN;
     }
 
+    
     public int getN_ORDEN() {
         return N_ORDEN;
     }

@@ -1,0 +1,4 @@
+Compra realizada el: 2020/12/19
+Comprador: DSV 
+N.Orden: 4
+Descripcion: [Pechuga de pollo]

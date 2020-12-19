@@ -1,0 +1,4 @@
+Compra realizada el: 2020/12/19
+Comprador: G
+N.Orden: 3
+Descripcion: [Pechuga de pollo]

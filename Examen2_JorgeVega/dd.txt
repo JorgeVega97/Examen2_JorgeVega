@@ -1,0 +1,4 @@
+Compra realizada el: 2020/12/19
+Comprador: DD
+N.Orden: 7
+Descripcion: [Pierna de pollo]

@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 /**
-Jorge  Vega
+Jorge Vega
  */
 public class Administrador {
     private ArrayList<Clase_Clientes> CLIENTS = new ArrayList();
@@ -23,8 +23,8 @@ public class Administrador {
         return CLIENTS;
     }
 
-    public void setListaPERSONAS(ArrayList<Clase_Clientes> PERSONS) {
-        this.CLIENTS = PERSONS;
+    public void setPERSONAS(ArrayList<Clase_Clientes> PERSONAS) {
+        this.CLIENTS = PERSONAS;
     }
 
     public File getFILE() {
@@ -37,8 +37,9 @@ public class Administrador {
 
     @Override
     public String toString() {
-        return "LISTA_PERSONAS" + CLIENTS;
+        return "LISTA_PERSONAS: " + CLIENTS;
     }
+
 
     public void setPERSONA(Clase_Clientes p) {
         this.CLIENTS.add(p);
@@ -47,20 +48,20 @@ public class Administrador {
     public void LOADING() {
         try {            
             CLIENTS = new ArrayList();
-            Clase_Clientes temp;
+            Clase_Clientes T;
             if (FILE.exists()) {
-                FileInputStream P
+                FileInputStream ENTER
                     = new FileInputStream(FILE);
-                ObjectInputStream objeto
-                    = new ObjectInputStream(P);
+                ObjectInputStream OB
+                    = new ObjectInputStream(ENTER);
                 try {
-                    while ((temp = (Clase_Clientes) objeto.readObject()) != null) {
-                        CLIENTS.add(temp);
+                    while ((T = (Clase_Clientes) OB.readObject()) != null) {
+                        CLIENTS.add(T);
                     }
-                } catch (EOFException e) {
+                } catch (EOFException FFF) {
                 }
-                objeto.close();
-                P.close();
+                OB.close();
+                ENTER.close();
             }            
         } catch (Exception ex) {
             ex.printStackTrace();
